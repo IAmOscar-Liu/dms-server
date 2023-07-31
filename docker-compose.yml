@@ -5,6 +5,8 @@ services:
       context: .
       target: BUILD_SERVER
     image: karta0989006/dms-server
+    environment:
+      - NODE_ENV=production
     ports:
       - 80:5001
     networks:
